@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "nfactory.crazytester.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "crazytester.refmap.json",
+  "mixins": [
+    "FishingHookAccessor",
+    "LocationPredicateMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
