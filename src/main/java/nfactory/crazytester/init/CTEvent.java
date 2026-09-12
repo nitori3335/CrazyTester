@@ -5,9 +5,7 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import nfactory.crazytester.CrazyTester;
-import nfactory.crazytester.command.FishingCommand;
 import nfactory.crazytester.command.TreasureCommand;
-import nfactory.crazytester.test.FishingTest;
 import nfactory.crazytester.test.TreasureTest;
 
 @Mod.EventBusSubscriber(modid = CrazyTester.MODID)
@@ -16,7 +14,6 @@ public class CTEvent {
     @SubscribeEvent
     public static void onRegisterCommands(RegisterCommandsEvent event) {
         TreasureCommand.register(event.getDispatcher());
-        FishingCommand.register(event.getDispatcher());
     }
 
     @SubscribeEvent
@@ -26,6 +23,5 @@ public class CTEvent {
         }
 
         TreasureTest.tick();
-        FishingTest.tick();
     }
 }
